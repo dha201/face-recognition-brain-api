@@ -11,7 +11,7 @@ const app = new Clarifai.App({
     // for the Face Detect Mode: https://www.clarifai.com/models/face-detection
     // If that isn't working, then that means you will have to wait until their servers are back up. 
   
-    app.models.predict('weapon-detection', req.body.input)
+    app.models.predict('face-detection', req.body.input)
       .then(data => {
         res.json(data);
       })
